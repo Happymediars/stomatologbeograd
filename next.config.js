@@ -8,7 +8,7 @@
  */
 const nextConfig = {
   reactStrictMode: true,
-  appDir: true,
+  
   async redirects() {
     // TODO: Replace with your own redirect rules once old URLs are mapped.
     return [];
