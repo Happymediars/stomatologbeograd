@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+ * You can add global styles here.  Feel free to customize the body,
+ * headings, or typography.  Use the `prose` class from Tailwind's
+ * typography plugin for rich text content when appropriate.
+ */
+
+body {
+  @apply bg-white text-slate-900;
+  font-family: sans-serif;
+}
