@@ -1,0 +1,37 @@
+backend:
+  name: github
+  repo: Happymediars/stomatologbeograd
+  branch: main
+
+media_folder: public/uploads
+public_folder: /uploads
+
+collections:
+  - name: pages
+    label: Pages
+    folder: content/pages
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { name: title, label: Title, widget: string }
+      - { name: description, label: Description, widget: text }
+      - { name: body, label: Body, widget: markdown }
+
+  - name: settings
+    label: Settings
+    files:
+      - label: Site Settings
+        name: site
+        file: content/settings/site.json
+        fields:
+          - { name: title, label: Title, widget: string }
+          - { name: description, label: Description, widget: text }
+          - { name: phone, label: Phone, widget: string }
+          - { name: email, label: Email, widget: string }
+          - { name: address, label: Address, widget: string }
+          - { name: city, label: City, widget: string }
+          - { name: country, label: Country, widget: string }
+          - { name: hours, label: Hours, widget: string }
+          - { name: facebook, label: Facebook, widget: string }
+          - { name: instagram, label: Instagram, widget: string }
+          - { name: map, label: Map, widget: string }
